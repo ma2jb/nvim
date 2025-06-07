@@ -10,8 +10,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup {
-  require 'plugins.rose-pine',
-  require 'plugins.Neotree',
+  -- require 'plugins.rose-pine',
+  require 'plugins.tokyonight',
+  -- require 'plugins.Neotree',
   require 'plugins.bufferline',
   require 'plugins.lualine',
   require 'plugins.treesitter',
@@ -20,8 +21,8 @@ require('lazy').setup {
   require 'plugins.autocompletion',
   require 'plugins.none-ls',
   require 'plugins.alpha-nvim',
-  require 'plugins.indent-blankline',
   require 'plugins.misc',
   require 'plugins.lazy-git',
   require 'plugins.comment',
+  require 'plugins.snacks',
 }
